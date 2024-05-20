@@ -1,10 +1,8 @@
--- Create the database
+
 CREATE DATABASE BMICalculator;
 
--- Use the newly created database
 USE BMICalculator;
 
--- Create the Users table
 CREATE TABLE Users (
     UserID INT AUTO_INCREMENT PRIMARY KEY,
     Username VARCHAR(50) NOT NULL,
@@ -15,7 +13,6 @@ CREATE TABLE Users (
     CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Create the BMIRecords table
 CREATE TABLE BMIRecords (
     RecordID INT AUTO_INCREMENT PRIMARY KEY,
     UserID INT,
